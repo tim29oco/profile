@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Routette</title>
+<link rel="stylesheet" href="paint.css"> 
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roulette Table</title>
+</head>
+<body>
+
+<div id="larger-array-display"></div>
+  
+<div class="Display_total">Total: $0</div>
+<div class="Display_Number">Number: # </div>
+<button class="spin-button" id="spinbutton">Spin!</button>
+
+  <div class="zeros" id="box00">99</div>
+  <div class="zeros" id="box0">0</div>
+
+  <table>
+    <tr>
+      <td id="invis" rowspan="3">Designer: Timothy OConnor</td> <!-- Connected Column -->
+      <td id="td3">3</td>
+      <td id="td6">6</td>
+      <td id="td9">9</td>
+      <td id="td12">12</td>
+      <td id="td15">15</td>
+      <td id="td18">18</td>
+      <td id="td21">21</td>
+      <td id="td24">24</td>
+      <td id="td27">27</td>
+      <td id="td30">30</td>
+      <td id="td33">33</td>
+      <td id="td36">36</td>
+      <td id="twoto1">2-1 3</td>
+  </tr>
+  <tr>
+      <td id="td2">2</td>
+      <td id="td5">5</td>
+      <td id="td8">8</td>
+      <td id="td11">11</td>
+      <td id="td14">14</td>
+      <td id="td17">17</td>
+      <td id="td20">20</td>
+      <td id="td23">23</td>
+      <td id="td26">26</td>
+      <td id="td29">29</td>
+      <td id="td32">32</td>
+      <td id="td35">35</td>
+      <td id="twoto1">2-1 2</td>
+  </tr>
+  <tr>
+      <td id="td1">1</td>
+      <td id="td4">4</td>
+      <td id="td7">7</td>
+      <td id="td10">10</td>
+      <td id="td13">13</td>
+      <td id="td16">16</td>
+      <td id="td19">19</td>
+      <td id="td22">22</td>
+      <td id="td25">25</td>
+      <td id="td28">28</td>
+      <td id="td31">31</td>
+      <td id="td34">34</td>
+      <td id="twoto1">2-1 1</td>
+  </tr>
+ 
+  <tr>
+    <td class="empty-cell">Good</td> <!-- Empty cell for spacing -->
+    <td class="first-12" colspan="4">1st 12</td>
+    <td class="second-12" colspan="4">2nd 12</td>
+    <td class="third-12" colspan="4">3rd 12</td>
+  </tr>
+
+  <tr>
+    <td class="empty-cell">Luck</td> <!-- Empty cell for spacing -->
+    <td class="range-1-18" colspan="2">1-18</td>
+    <td class="even" colspan="2">Even</td>
+    <td class="red" colspan="2">Red</td>
+    <td class="black" colspan="2">Black</td>
+    <td class="odd" colspan="2">Odd</td>
+    <td class="range-19-36" colspan="2">19-36</td>
+</tr>
+</table>
+
+<!-- 1 to 1 odds of winning -->
+
+<button class="table_button" id="one_eighteen_button" data-subarray="[200, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 1, 2]"></button>
+<button class="table_button" id="even_button"data-subarray="[200, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 1, 2]"></button>
+<button class="table_button" id="red_button" data-subarray="[200, 1, 3, 5, 7, 9, 12, 14,16, 18, 21, 23, 25, 27, 28, 30, 32, 34, 36 1, 2]"></button>
+<button class="table_button" id="black_button" data-subarray="[200, 2, 4, 6, 8, 10, 11, 13, 15, 17, 19, 20, 22, 24, 26, 29, 31, 33, 35, 1, 2]"></button>
+<button class="table_button" id="odd_button" data-subarray="[200, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 1, 2]"></button>
+<button class="table_button" id="nineteen_36_button" data-subarray="[200, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 1, 2]"></button>
+
+<!-- 2 to 1 odds of winning -->
+
+<button class="table_button" id="first_12" data-subarray="[200, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 3]"></button>
+<button class="table_button" id="second_12" data-subarray="[200, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 1, 3]"></button>
+<button class="table_button" id="third_12" data-subarray="[200, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 1, 3]"></button>
+<button class="table_button" id="one_row" data-subarray="[200, 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 1, 3]"></button>
+<button class="table_button" id="two_row" data-subarray="[200, 2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 1, 3]"></button>
+<button class="table_button" id="three_row" data-subarray="[200, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 1, 3]"></button>
+
+
+<!-- 35 to 1 odds of winning -->
+
+<button class="table_button" id="thirty_five_1" data-subarray="[200, 1, 1, 36]"></button>
+<button class="table_button" id="thirty_five_2" data-subarray="[200, 2, 1, 36]"></button>
+<button class="table_button" id="thirty_five_3" data-subarray="[200, 3, 1, 36]"></button>
+<button class="table_button" id="thirty_five_4" data-subarray="[200, 4, 1, 36]"></button>
+<button class="table_button" id="thirty_five_5" data-subarray="[200, 5, 1, 36]"></button>
+<button class="table_button" id="thirty_five_6" data-subarray="[200, 6, 1, 36]"></button>
+<button class="table_button" id="thirty_five_7" data-subarray="[200, 7, 1, 36]"></button>
+<button class="table_button" id="thirty_five_8" data-subarray="[200, 8, 1, 36]"></button>
+<button class="table_button" id="thirty_five_9" data-subarray="[200, 9, 1, 36]"></button>
+<button class="table_button" id="thirty_five_10" data-subarray="[200, 10, 1, 36]"></button>
+<button class="table_button" id="thirty_five_11" data-subarray="[200, 11, 1, 36]"></button>
+<button class="table_button" id="thirty_five_12" data-subarray="[200, 12, 1, 36]"></button>
+<button class="table_button" id="thirty_five_13" data-subarray="[200, 13, 1, 36]"></button>
+<button class="table_button" id="thirty_five_14" data-subarray="[200, 14, 1, 36]"></button>
+<button class="table_button" id="thirty_five_15" data-subarray="[200, 15, 1, 36]"></button>
+<button class="table_button" id="thirty_five_16" data-subarray="[200, 16, 1, 36]"></button>
+<button class="table_button" id="thirty_five_17" data-subarray="[200, 17, 1, 36]"></button>
+<button class="table_button" id="thirty_five_18" data-subarray="[200, 18, 1, 36]"></button>
+
+<button class="table_button" id="thirty_five_19" data-subarray="[200, 19, 1, 36]"></button>
+<button class="table_button" id="thirty_five_20" data-subarray="[200, 20, 1, 36]"></button>
+<button class="table_button" id="thirty_five_21" data-subarray="[200, 21, 1, 36]"></button>
+<button class="table_button" id="thirty_five_22" data-subarray="[200, 22, 1, 36]"></button>
+<button class="table_button" id="thirty_five_23" data-subarray="[200, 23, 1, 36]"></button>
+<button class="table_button" id="thirty_five_24" data-subarray="[200, 24, 1, 36]"></button>
+<button class="table_button" id="thirty_five_25" data-subarray="[200, 25, 1, 36]"></button>
+<button class="table_button" id="thirty_five_26" data-subarray="[200, 26, 1, 36]"></button>
+<button class="table_button" id="thirty_five_27" data-subarray="[200, 27, 1, 36]"></button>
+<button class="table_button" id="thirty_five_28" data-subarray="[200, 28, 1, 36]"></button>
+<button class="table_button" id="thirty_five_29" data-subarray="[200, 29, 1, 36]"></button>
+<button class="table_button" id="thirty_five_30" data-subarray="[200, 30, 1, 36]"></button>
+<button class="table_button" id="thirty_five_31" data-subarray="[200, 31, 1, 36]"></button>
+<button class="table_button" id="thirty_five_32" data-subarray="[200, 32, 1, 36]"></button>
+<button class="table_button" id="thirty_five_33" data-subarray="[200, 33, 1, 36]"></button>
+<button class="table_button" id="thirty_five_34" data-subarray="[200, 34, 1, 36]"></button>
+<button class="table_button" id="thirty_five_35" data-subarray="[200, 35, 1, 36]"></button>
+<button class="table_button" id="thirty_five_36" data-subarray="[200, 36, 1, 36]"></button>
+
+
+<!-- 17 to 1 odds of winning -->
+<button class="table_button" id="seventeen_one_1" data-subarray="[200, 3, 6, 1, 18]">36</button>
+<button class="table_button" id="seventeen_one_2" data-subarray="[200, 6, 9, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_3" data-subarray="[200, 9, 12, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_4" data-subarray="[200, 12, 15, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_5" data-subarray="[200, 15, 18, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_6" data-subarray="[200, 18, 21, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_7" data-subarray="[200, 21, 24, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_8" data-subarray="[200, 24, 27, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_9" data-subarray="[200, 27, 30, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_10" data-subarray="[200, 30, 33, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_11" data-subarray="[200, 33, 36, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_12" data-subarray="[200, 2, 5, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_13" data-subarray="[200, 5, 8, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_14" data-subarray="[200, 8, 11, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_15" data-subarray="[200, 11, 14, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_16" data-subarray="[200, 14, 17, 1, 18]">14,17</button>
+<button class="table_button" id="seventeen_one_17" data-subarray="[200, 17, 20, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_18" data-subarray="[200, 20, 23, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_19" data-subarray="[200, 23, 26, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_20" data-subarray="[200, 26, 29, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_21" data-subarray="[200, 29, 32, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_22" data-subarray="[200, 32, 35, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_23" data-subarray="[200, 1, 4, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_24" data-subarray="[200, 4, 7, 1, 18]">4,7</button>
+<button class="table_button" id="seventeen_one_25" data-subarray="[200, 7, 10, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_26" data-subarray="[200, 10, 13, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_27" data-subarray="[200, 13, 16, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_28" data-subarray="[200, 16, 19, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_29" data-subarray="[200, 19, 22, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_30" data-subarray="[200, 22, 25, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_31" data-subarray="[200, 25, 28, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_32" data-subarray="[200, 28, 31, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_33" data-subarray="[200, 31, 34, 1, 18]"></button>
+
+
+<!-- 17 to 1 odds of winning continued -->
+
+<button class="table_button" id="seventeen_one_34" data-subarray="[200, 2, 3, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_35" data-subarray="[200, 5, 6, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_36" data-subarray="[200, 8, 9, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_37" data-subarray="[200, 11, 12, 1, 18]">11,12</button>
+<button class="table_button" id="seventeen_one_38" data-subarray="[200, 14, 15, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_39" data-subarray="[200, 17, 18, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_40" data-subarray="[200, 20, 21, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_41" data-subarray="[200, 23, 24, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_42" data-subarray="[200, 26, 27, 1, 18]">26,27</button>
+<button class="table_button" id="seventeen_one_43" data-subarray="[200, 29, 30, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_44" data-subarray="[200, 32, 33, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_45" data-subarray="[200, 35, 36, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_46" data-subarray="[200, 1, 2, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_47" data-subarray="[200, 4, 5, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_48" data-subarray="[200, 7, 8, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_49" data-subarray="[200, 10, 11, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_50" data-subarray="[200, 13, 14, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_51" data-subarray="[200, 16, 17, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_52" data-subarray="[200, 19, 20, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_53" data-subarray="[200, 22, 23, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_54" data-subarray="[200, 25, 26, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_55" data-subarray="[200, 28, 29, 1, 18]">28,29</button>
+<button class="table_button" id="seventeen_one_56" data-subarray="[200, 31, 32, 1, 18]"></button>
+<button class="table_button" id="seventeen_one_57" data-subarray="[200, 34, 35, 1, 18]"></button>
+
+<!-- 11 to 1 odds buttons -->
+<button class="table_button" id="eleven_one_1" data-subarray="[200, 1, 2, 3, 1, 12]"></button>
+<button class="table_button" id="eleven_one_2" data-subarray="[200, 4, 5, 6, 1, 12]"></button>
+<button class="table_button" id="eleven_one_3" data-subarray="[200, 7, 8, 9, 1, 12]"></button>
+<button class="table_button" id="eleven_one_4" data-subarray="[200, 10, 11, 12, 1, 12]"></button>
+<button class="table_button" id="eleven_one_5" data-subarray="[200, 13, 14, 15, 1, 12]"></button>
+<button class="table_button" id="eleven_one_6" data-subarray="[200, 16, 17, 18, 1, 12]"></button>
+<button class="table_button" id="eleven_one_7" data-subarray="[200, 19, 20, 21, 1, 12]"></button>
+<button class="table_button" id="eleven_one_8" data-subarray="[200, 22, 23, 24, 1, 12]"></button>
+<button class="table_button" id="eleven_one_9" data-subarray="[200, 25, 26, 27, 1, 12]"></button>
+<button class="table_button" id="eleven_one_10" data-subarray="[200, 28, 29, 30, 1, 12]"></button>
+<button class="table_button" id="eleven_one_11" data-subarray="[200, 31, 32, 33, 1, 12]"></button>
+<button class="table_button" id="eleven_one_12" data-subarray="[200, 34, 35, 36, 1, 12]"></button>
+
+
+<!-- 11 to 1 odds buttons continued -->
+
+<button class="table_button" id="eleven_one_13" data-subarray="[200, 0, 1, 2, 1, 12]"></button>
+<button class="table_button" id="eleven_one_14" data-subarray="[200, 99, 2, 3, 1, 12]"></button>
+<button class="table_button" id="eleven_one_15" data-subarray="[200, 0, 99, 2, 1, 12]"></button>
+
+<!-- 8 to 1 odds buttons-->
+
+<button class="table_button" id="eight_one_1" data-subarray="[200, 2, 3, 5, 6, 1, 9]">2,3,5,6</button>
+<button class="table_button" id="eight_one_2" data-subarray="[200, 5, 6, 8, 9, 1, 9]">5,6,8,9</button>
+<button class="table_button" id="eight_one_3" data-subarray="[200, 8, 9, 11, 12, 1, 9]"></button>
+<button class="table_button" id="eight_one_4" data-subarray="[200, 11, 12, 14, 15, 1, 9]"></button>
+<button class="table_button" id="eight_one_5" data-subarray="[200, 14, 15, 17, 18, 1, 9]"></button>
+<button class="table_button" id="eight_one_6" data-subarray="[200, 17, 18, 20, 21, 1, 9]"></button>
+<button class="table_button" id="eight_one_7" data-subarray="[200, 20, 21, 23, 24, 1, 9]"></button>
+<button class="table_button" id="eight_one_8" data-subarray="[200, 23, 24, 26, 27, 1, 9]"></button>
+<button class="table_button" id="eight_one_9" data-subarray="[200, 26, 27, 29, 30, 1, 9]"></button>
+<button class="table_button" id="eight_one_10" data-subarray="[200, 29, 30, 32, 33, 1, 9]"></button>
+<button class="table_button" id="eight_one_11" data-subarray="[200, 32, 33, 35, 36, 1, 9]"></button>
+<button class="table_button" id="eight_one_12" data-subarray="[200, 1, 2, 4, 5, 1, 9]">1,2,4,5</button>
+<button class="table_button" id="eight_one_13" data-subarray="[200, 4, 5, 7, 8, 1, 9]"></button>
+<button class="table_button" id="eight_one_14" data-subarray="[200, 7, 8, 10, 11, 1, 9]"></button>
+<button class="table_button" id="eight_one_15" data-subarray="[200, 10, 11, 13, 14, 1, 9]"></button>
+<button class="table_button" id="eight_one_16" data-subarray="[200, 13, 14, 16, 17, 1, 9]"></button>
+<button class="table_button" id="eight_one_17" data-subarray="[200, 16, 17, 19, 20, 1, 9]"></button>
+<button class="table_button" id="eight_one_18" data-subarray="[200, 19, 20, 22, 23, 1, 9]"></button>
+<button class="table_button" id="eight_one_19" data-subarray="[200, 22, 23, 25, 26, 1, 9]"></button>
+<button class="table_button" id="eight_one_20" data-subarray="[200, 25, 26, 28, 29, 1, 9]"></button>
+<button class="table_button" id="eight_one_21" data-subarray="[200, 28, 29, 31, 32, 1, 9]"></button>
+<button class="table_button" id="eight_one_22" data-subarray="[200, 31, 32, 34, 35, 1, 9]"></button>
+
+
+<!-- Stub Need to make 5:1 Odds-->
+<button class="table_button" id="five_to_one1" data-subarray="[200, 1, 2, 3, 4, 5, 6, 1, 6]"></button>
+<button class="table_button" id="five_to_one2" data-subarray="[200, 4, 5, 6, 7, 8, 9, 1, 6]"></button>
+<button class="table_button" id="five_to_one3" data-subarray="[200, 7, 8, 9, 10, 11, 12, 1, 6]"></button>
+<button class="table_button" id="five_to_one4" data-subarray="[200, 10, 11, 12, 13, 14, 15, 1, 6]"></button>
+<button class="table_button" id="five_to_one5" data-subarray="[200, 13, 14, 15, 16, 17, 18, 1, 6]"></button>
+<button class="table_button" id="five_to_one6" data-subarray="[200, 16, 17, 18, 19, 20, 21, 1, 6]"></button>
+<button class="table_button" id="five_to_one7" data-subarray="[200, 19, 20, 21, 22, 23, 24, 1, 6]"></button>
+<button class="table_button" id="five_to_one8" data-subarray="[200, 22, 23, 24, 25, 26, 27, 1, 6]"></button>
+<button class="table_button" id="five_to_one9" data-subarray="[200, 25, 26, 27, 28, 29, 30, 1, 6]"></button>
+<button class="table_button" id="five_to_one10" data-subarray="[200, 28, 29, 30, 31, 32, 33, 1, 6]"></button>
+<button class="table_button" id="five_to_one11" data-subarray="[200, 31, 32, 33, 34, 35, 36, 1, 6]"></button>
+
+<script src="main.js"></script>
+
+</body>
+</html>
