@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('img/image.png'); /* Path to your image */
+    background-image: url('image.png'); /* Path to your image */
     background-size: cover;
     display: flex;
     justify-content: center;
