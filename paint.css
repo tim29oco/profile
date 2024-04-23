@@ -1,0 +1,1158 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-image: url('img/image.png'); /* Path to your image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.coin-button {
+  position: absolute;
+  z-index: 9999;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 40px;
+}
+
+#btn100 {
+  top: 10px;
+  left: 500px;
+}
+#btn100:hover {
+  border: 2px solid white /* Slightly transparent gray */
+}
+
+#btn300 {
+  top: 10px;
+  left:  700px;
+}
+
+#btn300:hover {
+  border: 2px solid white /* Slightly transparent gray */
+}
+
+#btn700 {
+  top: 10px;;
+  left: 900px;
+}
+
+#btn700:hover {
+  border: 2px solid white /* Slightly transparent gray */
+}
+
+.Buy-button {
+  position: absolute;
+  z-index: 9999;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 40px;
+  top:10px;
+  left:10px;
+}
+
+.Buy-button:hover {
+    border: 2px solid white /* Slightly transparent gray */
+}
+
+.spin-button {
+  position: absolute;
+  z-index: 9999;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 40px;
+  top:10px;
+  right:10px;
+}
+
+.spin-button:hover {
+  border: 2px solid white /* Slightly transparent gray */
+}
+
+.Display_total {
+  z-index: 9999;
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  background-color: transparent;
+  color: white;
+  font-size: 2em; /* Adjust font size as needed */
+  /* Add any other styles as needed */
+  top:30px;
+  border-radius: 20%;
+  padding: 10px;
+  left:110px;
+}
+
+.selection {
+  position: absolute;
+  z-index: 9999;
+  width: 200px;
+  height: 400px;
+  background-color: black;
+  color: white;
+}
+
+
+.Display_Number {
+  z-index: 9999;
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  background-color: transparent;
+  color: white;
+  font-size: 2em; /* Adjust font size as needed */
+  /* Add any other styles as needed */
+  top:30px;
+  padding: 10px;
+  right:120px;
+  border-radius: 20%;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Adjust table width as needed */
+}
+
+th, td {
+    border: 3px solid white; /* White border for inner lines */
+    text-align:center;
+    width: 150px; /* Adjust cell width as needed */
+    height: 60px; /* Adjust cell height as needed */
+    color: rgb(241, 241, 241); /* Text color */
+    padding: 15px; /* Add padding to each cell */
+}
+#td1,
+#td3,
+#td5,
+#td7,
+#td9,
+#td12,
+#td14,
+#td16,
+#td18,
+#td21,
+#td23,
+#td25,
+#td27,
+#td28,
+#td30,
+#td32,
+#td34,
+#td36 {
+    font-size: 2rem;
+    background-color: rgb(182, 0, 0);; /* Bright red background */
+}
+
+#td2,
+#td4,
+#td6,
+#td8,
+#td10,
+#td11,
+#td13,
+#td15,
+#td17,
+#td19,
+#td20,
+#td22,
+#td24,
+#td26,
+#td29,
+#td31,
+#td33,
+#td35 {
+    font-size: 2rem;
+    background-color: rgb(38, 38, 38); /* Black background */
+}
+
+.first-12, .second-12, .third-12{
+    font-size: 2rem;
+    color: rgb(241, 241, 241); /* Font color black */
+    /* Additional CSS properties for the "2nd 12" cell */
+}
+
+.range-1-18, .even, .odd, .range-19-36 {
+    color: rgb(241, 241, 241); /* Font color black */
+    font-size: 2rem; /* Font size 2rem */
+}
+
+.black {
+    font-size: 2rem;
+    background-color: rgb(38, 38, 38);; /* Background color black */
+    color: rgb(241, 241, 241);; /* Font color white */
+}
+
+.red {
+    font-size: 2rem;
+    background-color: rgb(182, 0, 0); /* Background color red */
+    color: rgb(241, 241, 241);; /* Font color white */
+}
+
+#twoto1 {
+color: rgb(241, 241, 241); /* Font color black */
+font-size: 2rem; /* Font size 2rem */
+}
+
+#invis {
+    color: transparent; /* Make the text invisible */
+    width: calc(11%); /* Increase width by 10 pixels */
+}
+
+.empty-cell {
+    font-size: 2rem; 
+}
+
+/* 1 to 1 odds Buttons */
+
+
+.table_button {
+    position: absolute;
+    z-index: 9999;
+    background-color: hsla(39, 18%, 39%, 0.078);
+    color: transparent;
+    font-size: 16px;
+    border: 3px dotted whitesmoke;
+    border-color: rgba(240, 248, 255, 0.10);
+    font-weight: bold;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    line-height: 40px;
+  }
+
+  /* Hover effect */
+.table_button:hover {
+    border: 2px solid white /* Slightly transparent gray */
+  }
+
+  #one_eighteen_button {
+    top:  510px; /* Adjust to your desired vertical position */
+    left: 250px; /* Adjust to your desired horizontal position */
+
+  }
+
+  #even_button {
+    top: 510px; /* Adjust to your desired vertical position */
+    left: 450px; /* Adjust to your desired horizontal position */
+
+  }
+
+  #red_button {
+    top: 510px; /* Adjust to your desired vertical position */
+    left: 660px; /* Adjust to your desired horizontal position */
+
+  }
+
+  #black_button {
+    top: 510px; /* Adjust to your desired vertical position */
+    left: 870px; /* Adjust to your desired horizontal position */
+
+  }
+
+  #odd_button {
+    top: 510px; /* Adjust to your desired vertical position */
+    left: 1090px; /* Adjust to your desired horizontal position */
+
+  }
+
+  #nineteen_36_button {
+    top: 510px; /* Adjust to your desired vertical position */
+    left: 1310px; /* Adjust to your desired horizontal position */
+
+  }
+
+/* 2 to 1 odds Buttons */
+ 
+  #first_12 {
+    top: 420px;
+    left:350px;
+
+  }
+
+  #second_12 {
+    top: 420px;
+    left:780px;
+
+  }
+
+  #third_12 {
+    top: 420px;
+    left:1200px;
+
+  }
+  
+/* 1-2 */ 
+
+  #one_row {
+    top: 148px;
+    right: 40px;
+
+  }
+
+  #two_row {
+    top: 240px;
+    right: 40px;
+
+  }
+
+  #three_row {
+    right: 40px;
+
+  }
+
+/* 3-36 */ 
+
+  /* 3 */
+  #thirty_five_1 {
+    top: 145px;
+    left:200px;
+
+  }
+
+  /* 6 */
+  #thirty_five_2 {
+    top: 145px;
+    left:300px;
+
+  }
+
+  /* 9 */
+  #thirty_five_3 { 
+    top: 145px; 
+    left:397px; 
+
+  }
+   /* 12 */
+  #thirty_five_4 {
+    top: 145px;
+    left: 500px;
+
+  }
+
+  /* 15 */
+  #thirty_five_5 {
+    top: 145px;
+    left: 608px;
+
+  }
+
+ /* 18 */  
+  #thirty_five_6 {
+    top: 145px;
+    left:716px;
+
+  }
+
+  /* 21 */
+  #thirty_five_7 {
+    top: 145px;
+    left: 820px;
+
+  }
+
+  /* 24 */ 
+  #thirty_five_8 {
+    top: 145px;
+    left:930px;
+
+  }
+
+  /* 27 */
+  #thirty_five_9 {
+    top: 145px;
+    left:1036px;
+
+  }
+ 
+  /* 30 */
+  #thirty_five_10 {
+    top: 145px;
+    left:1144px;
+
+  }
+
+   /* 33 */
+  #thirty_five_11 {
+    top: 145px;
+    left:1250px;
+
+  }
+
+  /* 36 */
+  #thirty_five_12 {
+    top: 145px;
+    left:1360px;
+
+  }
+
+ /*2-35*/
+
+  /* 2 */
+  #thirty_five_13 {
+    top: 232px;
+    left:200px;
+
+  }
+
+  /* 5 */
+  #thirty_five_14 {
+    top: 232px;
+    left:300px;
+
+  }
+
+  /* 8 */
+  #thirty_five_15 { 
+    top: 232px; 
+    left:397px;
+
+  }
+   /* 11 */
+  #thirty_five_16 {
+    top: 232px;
+    left: 500px;
+
+  }
+
+  /* 14 */
+  #thirty_five_17 {
+    top: 232px;
+    left: 608px;
+
+  }
+
+ /* 17 */  
+#thirty_five_18 {
+    top: 232px;
+    left:716px;
+
+  }
+
+  /* 20 */
+  #thirty_five_19 {
+    top: 232px;
+    left: 820px;
+
+  }
+
+  /* 23 */ 
+  #thirty_five_20 {
+    top: 232px;
+    left:930px;
+
+  }
+
+  /* 26 */
+  #thirty_five_21 {
+    top: 232px;
+    left:1036px;
+
+  }
+ 
+  /* 29 */
+  #thirty_five_22 {
+    top: 232px;
+    left:1144px;
+
+  }
+
+   /* 32 */
+  #thirty_five_23 {
+    top: 232px;
+    left:1250px;
+
+  }
+
+  /* 35 */
+  #thirty_five_24 {
+    top: 232px;
+    left:1360px;
+
+  }
+
+/* 1-34 */
+
+/* 1 */
+#thirty_five_25 {
+  top: 324px;
+  left:200px;
+}
+
+/* 4 */
+#thirty_five_26 {
+   top: 324px;
+   left:300px;
+
+}
+
+/* 7 */
+#thirty_five_27 { 
+   top: 324px; 
+   left:397px;
+
+  }
+ /* 10 */
+#thirty_five_28 {
+   top: 324px;
+   left: 500px;
+
+  }
+
+/* 13 */
+#thirty_five_29 {
+   top: 324px;
+   left: 608px;
+
+}
+
+/* 16 */  
+#thirty_five_30 {
+   top: 324px;
+   left:716px;
+
+}
+
+/* 19 */
+#thirty_five_31 {
+   top: 324px;
+   left: 824px;
+
+}
+
+/* 22 */ 
+#thirty_five_32 {
+   top: 324px;
+  left:930px;
+}
+
+/* 25 */
+#thirty_five_33 {
+   top: 324px;
+  left: 1038px;
+}
+
+/* 28*/
+#thirty_five_34 {
+   top: 324px;
+  left:1144px;
+}
+
+ /* 31 */
+#thirty_five_35 {
+   top: 324px;
+  left:1252px;
+}
+
+/* 34 */
+#thirty_five_36 {
+   top: 324px;
+  left:1360px;
+}
+  
+/* box00s */
+
+.zeros {
+  width: 122px;
+  height: 95px;
+  color: rgb(241, 241, 241);
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid white;
+  position: relative;
+  font-size: 3rem;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#box00 {
+  z-index: 3;
+  top: 100px;
+  left: -18px;
+  position: absolute; /* Add position: absolute; */
+}
+
+#box0 {
+    z-index: 3;
+    top: 240px;
+    left: -18px;
+    position: absolute; /* Add position: absolute; */
+}
+
+/* 3-6 */ 
+#seventeen_one_1 {
+  top: 145px;
+  left:248px;
+}
+/* 6-9 */ 
+#seventeen_one_2 {
+  top: 145px;;
+  left:345px;
+}
+/* 9-12 */ 
+#seventeen_one_3 {
+  top: 145px;;
+  left:442px;
+}
+/* 12-15 */ 
+#seventeen_one_4 {
+  top: 145px;;
+  left:550px;
+}
+/* 15-18 */ 
+#seventeen_one_5 {
+  top: 145px;;
+  left:655px;
+}
+/* 18-21 */ 
+#seventeen_one_6 {
+  top: 145px;;
+  left:765px;
+}
+/* 21-24 */ 
+#seventeen_one_7 {
+  top: 145px;;
+  left:870px;
+}
+/* 24-27 */ 
+#seventeen_one_8 {
+  top: 145px;;
+  left:980px;
+}
+/* 27-30 */ 
+#seventeen_one_9 {
+  top: 145px;;
+  left:1087px;
+}
+/* 30-33 */ 
+#seventeen_one_10 {
+  top: 145px;;
+  left:1196px;
+}
+/* 33-36 */ 
+#seventeen_one_11 {
+  top: 145px;;
+  left:1304px;
+}
+
+/* 2-5 */ 
+#seventeen_one_12 {
+  top: 232px;
+  left:248px;
+}
+/* 5-8 */ 
+#seventeen_one_13 {
+  top: 232px;;
+  left:345px;}
+/* 8-11 */ 
+#seventeen_one_14 {
+  top: 232px;;
+  left:442px;}
+/* 11-14 */ 
+#seventeen_one_15 {
+  top: 232px;;
+  left:550px;}
+/* 14-17 */ 
+#seventeen_one_16 {
+  top: 232px;;
+  left:655px;}
+/* 17-20 */ 
+#seventeen_one_17 {
+  top: 232px;;
+  left:765px;}
+/* 20-23 */ 
+#seventeen_one_18 {
+  top: 232px;;
+  left:870px;}
+/* 23-26 */ 
+#seventeen_one_19 {
+  top: 232px;;
+  left:980px;}
+/* 26-29 */ 
+#seventeen_one_20 {
+  top: 232px;;
+  left:1087px;}
+/* 29-32 */ 
+#seventeen_one_21 {
+  top: 232px;;
+  left:1196px;}
+/* 32-35 */ 
+#seventeen_one_22 {
+  top: 232px;;
+  left:1304px;}
+
+#seventeen_one_23 {
+  top: 324px;
+  left:248px;}
+
+#seventeen_one_24 {
+  top: 324px;
+  left:345px;}
+
+#seventeen_one_25 {
+  top: 324px;
+  left:442px;}
+
+#seventeen_one_26 {
+  top: 324px;
+  left:550px;}
+
+#seventeen_one_27 {
+  top: 324px;
+  left:655px;}
+
+#seventeen_one_28 {
+  top: 324px;
+  left:765px;}
+
+#seventeen_one_29 {
+  top: 324px;
+  left:870px;}
+
+#seventeen_one_30 {
+  top: 324px;
+  left:980px;}
+
+#seventeen_one_31 {
+  top: 324px;
+  left:1087px;
+}
+
+#seventeen_one_32 {
+  top: 324px;
+  left:1196px;
+}
+
+#seventeen_one_33 {
+  top: 324px;
+  left:1304px;
+}
+
+/* 2-3 */ 
+#seventeen_one_34 {
+  top: 194px;
+  left:202px;
+}
+
+/* 5-6 */ 
+#seventeen_one_35 {
+  top: 194px;
+  left:300px;
+}
+
+/* 8-9 */ 
+#seventeen_one_36 {
+  top: 194px;
+  left:398px;
+}
+
+/* 11-12 */ 
+#seventeen_one_37 {
+  top: 194px;
+  left:500px;
+}
+
+/* 14-15 */ 
+#seventeen_one_38{
+  top: 194px;
+  left:608px;
+}
+
+/* 17-18*/ 
+#seventeen_one_39 {
+  top: 194px;
+  left:714px;
+}
+
+/* 20-21 */ 
+#seventeen_one_40 {
+  top: 194px;
+  left:820px;
+}
+
+/* 23-24 */ 
+#seventeen_one_41 {
+  top: 194px;
+  left:930px;
+}
+
+/* 26-27 */ 
+#seventeen_one_42 {
+  top: 194px;
+  left:1038px;
+}
+
+/* 29-30 */ 
+#seventeen_one_43 {
+  top: 194px;
+  left:1144px;
+}
+
+/* 32-33 */ 
+#seventeen_one_44 {
+  top: 194px;
+  left:1250px;;
+}
+
+/* 35-36 */ 
+#seventeen_one_45 {
+  top: 194px;
+  left:1360px;;
+}
+
+/* 1-2 */ 
+#seventeen_one_46 {
+  top: 286px;
+  left:202px;
+}
+
+/* 4-5 */ 
+#seventeen_one_47 {
+  top: 286px;
+  left:300px;
+}
+
+/* 7 - 8 */ 
+#seventeen_one_48 {
+  top: 286px;
+  left:398px;
+}
+
+/* 10 - 11 */ 
+#seventeen_one_49 {
+  top: 286px;
+  left:500px;
+}
+
+/* 13- 14 */ 
+#seventeen_one_50 {
+  top: 286px;
+  left:608px;
+}
+
+/* 16- 17 */ 
+#seventeen_one_51 {
+  top: 286px;
+  left:714px;
+}
+
+/* 19 - 20 */ 
+#seventeen_one_52 {
+  top: 286px;
+  left:820px;
+}
+
+/* 22 - 23 */ 
+#seventeen_one_53 {
+  top: 286px;
+  left:930px;
+}
+
+/* 25 - 26 */ 
+#seventeen_one_54 {
+  top: 286px;
+  left:1038px;
+}
+
+/* 28 - 29 */ 
+#seventeen_one_55 {
+  top: 286px;
+  left:1144px;
+}
+
+/* 31 - 32 */ 
+#seventeen_one_56 {
+  top: 286px;
+  left:1250px;
+}
+
+/* 34 - 35 */ 
+#seventeen_one_57 {
+  top: 286px;
+  left:1360px;
+}
+
+/* 11 to 1 Odds (3 Buttons) */ 
+
+/* 1-2-3 */ 
+#eleven_one_1 {
+  top: 102px;
+  left:200px;
+}
+/* 4-5-6 */ 
+#eleven_one_2 {
+  top: 102px;
+  left:300px;
+}
+/* 7-8-9 */ 
+#eleven_one_3 {
+  top: 102px;
+  left:396px;
+}
+/* 10-11-12 */ 
+#eleven_one_4 {
+  top: 102px;
+  left:500px;
+}
+/* 13-14-15 */ 
+#eleven_one_5 {
+  top: 102px;
+  left:610px;
+}
+/* 16-17-18 */ 
+#eleven_one_6 {
+  top: 102px;
+  left:716px;
+}
+/* 19-20-21 */ 
+#eleven_one_7 {
+  top: 102px;
+  left:820px;
+}
+/* 22-23-24 */ 
+#eleven_one_8 {
+  top: 102px;
+  left:930px;
+}
+/* 25-26-27 */ 
+#eleven_one_9 {
+  top: 102px;
+  left:1036px;
+}
+/* 28-29-30 */ 
+#eleven_one_10 {
+  top: 102px;
+  left:1144px;
+}
+/* 31-32-33 */ 
+#eleven_one_11 {
+  top: 102px;
+  left:1250px;
+}
+/* 34-35-36 */ 
+#eleven_one_12 {
+  top: 102px;
+  left:1360px;
+}
+
+/* 0-1-2*/
+#eleven_one_13 {
+  top: 286px;
+  left:148px;
+}
+
+/* 00-2-3 */
+#eleven_one_14 {
+  top: 192px;
+  left:148px;
+}
+
+/* 0-00-2 */
+#eleven_one_15 {
+  top: 240px;
+  left:148px;
+}
+
+#eight_one_1 {
+  top: 196px;
+  left:252px;
+}
+
+#eight_one_2 {
+  top: 196px;
+  left:348px;
+}
+
+#eight_one_3 {
+  top: 196px;
+  left:446px;
+}
+
+#eight_one_4 {
+  top: 196px;
+  left:556px;
+}
+
+#eight_one_5 {
+  top: 196px;
+  left:664px;
+}
+
+#eight_one_6 {
+  top: 196px;
+  left:772px;
+}
+
+#eight_one_7 {
+  top: 196px;
+  left:876px;
+}
+
+#eight_one_8 {
+  top: 196px;
+  left:986px;
+}
+
+#eight_one_9 {
+  top: 196px;
+  left:1090px;
+}
+
+#eight_one_10 {
+  top: 196px;
+  left:1200px;
+}
+
+#eight_one_11 {
+  top: 196px;
+  left:1308px;
+}
+
+#eight_one_12 {
+  top: 286px;
+  left:248px;
+}
+
+#eight_one_13 {
+   top: 286px;
+  left:348px;
+}
+
+#eight_one_14 {
+   top: 286px;
+  left:448px;
+}
+
+#eight_one_15 {
+   top: 286px;
+  left:554px;
+}
+
+#eight_one_16 {
+   top: 286px;
+  left:660px;
+}
+
+#eight_one_17 {
+   top: 286px;
+  left:770px;
+}
+
+#eight_one_18 {
+   top: 286px;
+  left:876px;
+}
+
+#eight_one_19 {
+   top: 286px;
+  left:986px;
+}
+
+#eight_one_20 {
+   top: 286px;
+  left:1090px;
+}
+
+#eight_one_21 {
+   top: 286px;
+  left:1200px;
+}
+
+#eight_one_22 {
+   top: 286px;
+  left:1306px;
+}
+
+#five_to_one1 {
+  top:102px;
+  left:252px;
+}
+
+#five_to_one2 {
+  top:102px;
+  left:348px;
+}
+
+#five_to_one3 {
+  top:102px;
+  left:450px;
+}
+
+#five_to_one4 {
+  top:102px;
+  left:550px;
+}
+
+#five_to_one5 {
+  top:102px;
+  left:660px;
+}
+
+#five_to_one6 {
+  top:102px;
+  left:766px;
+}
+
+#five_to_one7 {
+  top:102px;
+  left:874px;
+}
+
+#five_to_one8 {
+  top:102px;
+  left:984px;
+}
+
+#five_to_one9 {
+  top:102px;
+  left:1094px;
+}
+
+#five_to_one10 {
+  top:102px;
+  left:1200px;
+}
+
+#five_to_one11 {
+  top:102px;
+  left:1308px;
+}
+
+
+
+
+
+
+
