@@ -14,8 +14,8 @@ body {
     text-decoration:none;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(rgba(238, 130, 238, 0.5), rgba(255, 0, 0, 0.5), rgba(255, 166, 0, 0.5) , rgba(255, 255, 0, 0.5), rgba(0, 255, 0, 0.5), rgba(0, 255, 255, 0.5))
-}
+    background-image: linear-gradient(rgba(238, 130, 238, 0.5)
+                                      }
 
 a {
     text-decoration:none;
@@ -158,38 +158,8 @@ h2 {
     margin-left:1rem;
 }
 
-.left {
-    float:left;
-    margin-right:1rem;
-}
-
-.right {
-    float:right;
-    margin-left:1rem;
-}
-
-div img {
-    height:60vh;
-    width:30vw;  
-}
-
 .bold {
     font-weight:900;
-}
-
-
-.article-one p a {
-    color:black;
-}
-
-.article-one p a:visited {
-    color:black;
-}
-
-.article-one p a:hover {
-    font-weight:900;
-    font-size:2rem;
-
 }
 
 h3 {
