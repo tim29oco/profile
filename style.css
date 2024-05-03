@@ -1,0 +1,110 @@
+* {
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+}
+
+body {
+    background-color: #f2f7ff; /* Light Blue background */
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ffffff; /* White background for header */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    animation: fadeIn 1s ease; /* Fade in animation */
+}
+
+.header-one {
+    color: #336699; /* Dark Blue text color */
+    margin-bottom: 0; /* Remove default margin */
+    font-size: 3rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+    font-size: 2em; /* Adjust the font size */
+}
+
+
+nav ul li a:hover {
+    color: #1e4d8c; /* Darker Blue on hover */
+    transform: translateY(-3px); /* Move link up slightly on hover */
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: 40px auto;
+    max-width: 20%; /* Adjust the percentage to make the image smaller */
+    border-radius: 50%; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    animation: bounceIn 1s ease; /* Bounce in animation */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+    color: #336699;
+    font-weight: bolder;
+}
+
+.red-box a, .red-box a:hover, .red-box a:visited {
+    color: #ff0000; /* Red color */
+}
+
+.linkedin-box a, .linkedin-box a:hover, .linkedin-box a:visited {
+    color:#0077B5;
+}
+
+.facebook-box a, .facebook-box a:hover, .facebook-box a:visited {
+    color:#1877F2;
+}
+
+.instagram-box a, .instagram-box a:hover, .instagram-box a:visited {
+   color:#833AB4;
+}
+ 
+.ebay a, .ebay a:hover, .ebay a:visited {
+    color:#0064D2;
+}
+
+.capstone-box a, .capstone-box a:hover, .capstone-box a:visited {
+    color:#324442;
+}
