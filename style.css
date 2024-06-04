@@ -108,3 +108,41 @@ p {
 .capstone-box a, .capstone-box a:hover, .capstone-box a:visited {
     color:#324442;
 }
+
+.tiktok-box a, .tiktok-box a:hover, .tiktok-box a:visited {
+    color: black;
+}
+
+@font-face {
+    font-family: 'US Bill Bold';
+    src: url('usbillbold.woff2') format('woff2'),
+         url('usbillbold.woff') format('woff');
+  }
+  
+  .skool-link {
+    font-family: 'US Bill Bold', sans-serif;
+    letter-spacing: normal;
+    text-decoration: none; /* Optional: Remove underline */
+  }
+  
+  .color-s {
+    color: #262f9e;
+  }
+  
+  .color-k {
+    color: #e34534;
+  }
+  
+  .color-o1 {
+    color: #e9b458;
+  }
+  
+  .color-o2 {
+    color: #50b8f2;
+  }
+  
+  .color-l {
+    color: #d2513d;
+  }
+  
+  
