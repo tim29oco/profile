@@ -93,25 +93,8 @@ p {
     color:#0077B5;
 }
 
-.facebook-box a, .facebook-box a:hover, .facebook-box a:visited {
-    color:#1877F2;
-}
-
-.instagram-box a, .instagram-box a:hover, .instagram-box a:visited {
-   color:#833AB4;
-}
- 
-.ebay a, .ebay a:hover, .ebay a:visited {
-    color:#0064D2;
-}
-
 .capstone-box a, .capstone-box a:hover, .capstone-box a:visited {
     color:#324442;
-}
-
-.tiktok-box a, .tiktok-box a:hover, .tiktok-box a:visited {
-    color: black;
-}
 
 @font-face {
     font-family: 'US Bill Bold';
@@ -119,30 +102,4 @@ p {
          url('usbillbold.woff') format('woff');
   }
   
-  .skool-link {
-    font-family: 'US Bill Bold', sans-serif;
-    letter-spacing: normal;
-    text-decoration: none; /* Optional: Remove underline */
-  }
-  
-  .color-s {
-    color: #262f9e;
-  }
-  
-  .color-k {
-    color: #e34534;
-  }
-  
-  .color-o1 {
-    color: #e9b458;
-  }
-  
-  .color-o2 {
-    color: #50b8f2;
-  }
-  
-  .color-l {
-    color: #d2513d;
-  }
-  
-  
+
